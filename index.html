@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>City Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading{
+            color: chartreuse;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 40px;
+
+        }
+
+        #condition{
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="heading">City Weather Status!</h2>
+    <div class="container">
+        <form class="col-md-6 m-auto py-3">
+            <div class="input-group mb-3">
+                <input id="citys-name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchedTemperature()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="citys">City Name</h1>
+            <h3><span id="temperatured">00.00</span>&deg;C</h3>
+            <h1 id="clouders" class="lead">weather-status</h1>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
